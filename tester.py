@@ -72,7 +72,7 @@ def summary(name, arr):
     print(f"std {statistics.pstdev(arr):.2f} ms")
     print("===========================")
 
-async def bench(name, func, trials=10):
+async def bench(name, func, trials=100):
     times = []
     for i in range(trials):
         t0 = time.perf_counter()
